@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module code_analyzer_classes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>code_analyzer_classes</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/daejinseon/Developer/PycharmProjects/Static%20Code%20Analyzer/Static%20Code%20Analyzer/task/analyzer/code_analyzer_classes.py">/Users/daejinseon/Developer/PycharmProjects/Static Code Analyzer/Static Code Analyzer/task/analyzer/code_analyzer_classes.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="ast.html">ast</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="ast.html#NodeVisitor">ast.NodeVisitor</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="code_analyzer_classes.html#ClassNameAnalyzer">ClassNameAnalyzer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="code_analyzer_classes.html#FunctionArgumentsAnalyzer">FunctionArgumentsAnalyzer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="code_analyzer_classes.html#FunctionNameAnalyzer">FunctionNameAnalyzer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="code_analyzer_classes.html#FunctionVariableNameAnalyser">FunctionVariableNameAnalyser</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="code_analyzer_classes.html#CodeAnalyzer">CodeAnalyzer</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ClassNameAnalyzer">class <strong>ClassNameAnalyzer</strong></a>(<a href="ast.html#NodeVisitor">ast.NodeVisitor</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ClassNameAnalyzer">ClassNameAnalyzer</a>(file_path:&nbsp;str)<br>
+&nbsp;<br>
+Create&nbsp;<a href="#ClassNameAnalyzer">ClassNameAnalyzer</a>&nbsp;<a href="builtins.html#object">object</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="code_analyzer_classes.html#ClassNameAnalyzer">ClassNameAnalyzer</a></dd>
+<dd><a href="ast.html#NodeVisitor">ast.NodeVisitor</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ClassNameAnalyzer-__init__"><strong>__init__</strong></a>(self, file_path: str)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ClassNameAnalyzer-visit_ClassDef"><strong>visit_ClassDef</strong></a>(self, node: ast.ClassDef)</dt></dl>
+
+<hr>
+Methods inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><a name="ClassNameAnalyzer-generic_visit"><strong>generic_visit</strong></a>(self, node)</dt><dd><tt>Called&nbsp;if&nbsp;no&nbsp;explicit&nbsp;visitor&nbsp;function&nbsp;exists&nbsp;for&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="ClassNameAnalyzer-visit"><strong>visit</strong></a>(self, node)</dt><dd><tt>Visit&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="ClassNameAnalyzer-visit_Constant"><strong>visit_Constant</strong></a>(self, node)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CodeAnalyzer">class <strong>CodeAnalyzer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#CodeAnalyzer">CodeAnalyzer</a>(file_path:&nbsp;str)<br>
+&nbsp;<br>
+Create&nbsp;CodeAnalyser&nbsp;<a href="builtins.html#object">object</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="CodeAnalyzer-__init__"><strong>__init__</strong></a>(self, file_path: str)</dt><dd><tt>Initialize&nbsp;<a href="#CodeAnalyzer">CodeAnalyzer</a>&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;file_path&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;path&nbsp;of&nbsp;the&nbsp;file,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_length_line&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;maximum&nbsp;code&nbsp;line&nbsp;length,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;indent&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;indentation&nbsp;of&nbsp;the&nbsp;code,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;blank_lines&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;count&nbsp;of&nbsp;blank&nbsp;lines,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_blank_lines&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;maximum&nbsp;number&nbsp;of&nbsp;blank&nbsp;lines</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_blank_lines"><strong>check_blank_lines</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Check&nbsp;for&nbsp;number&nbsp;of&nbsp;blank&nbsp;lines.<br>
+If&nbsp;number&nbsp;of&nbsp;blank&nbsp;lines&nbsp;exceeds&nbsp;maximum&nbsp;number&nbsp;of&nbsp;blank&nbsp;lines,&nbsp;raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;Error.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_construction_name_spacing"><strong>check_construction_name_spacing</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Check&nbsp;for&nbsp;correct&nbsp;spacing&nbsp;between&nbsp;construction&nbsp;name&nbsp;and&nbsp;class/func&nbsp;name.<br>
+If&nbsp;it&nbsp;is&nbsp;not&nbsp;one&nbsp;whitespace&nbsp;between&nbsp;them,&nbsp;raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;Error.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_indentation"><strong>check_indentation</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Check&nbsp;code&nbsp;line&nbsp;for&nbsp;its&nbsp;indentation.<br>
+If&nbsp;the&nbsp;indentation&nbsp;is&nbsp;not&nbsp;a&nbsp;multiple&nbsp;of&nbsp;4&nbsp;whitespaces,&nbsp;raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;Error.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_inline_comments_space"><strong>check_inline_comments_space</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Check&nbsp;code&nbsp;line&nbsp;for&nbsp;an&nbsp;inline&nbsp;comment.<br>
+If&nbsp;the&nbsp;space&nbsp;between&nbsp;the&nbsp;inline&nbsp;comment&nbsp;and&nbsp;code&nbsp;is&nbsp;less&nbsp;than&nbsp;2&nbsp;whitespaces,&nbsp;raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;Error.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_length_code_lines"><strong>check_length_code_lines</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Check&nbsp;code&nbsp;line&nbsp;for&nbsp;its&nbsp;length.<br>
+If&nbsp;length&nbsp;exceeds&nbsp;maximum&nbsp;code&nbsp;line&nbsp;length,&nbsp;raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;Error.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_semicolon"><strong>check_semicolon</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Check&nbsp;code&nbsp;line&nbsp;for&nbsp;a&nbsp;semicolon&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;an&nbsp;expression.<br>
+If&nbsp;semicolon&nbsp;exists,&nbsp;raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;Error.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-check_todos"><strong>check_todos</strong></a>(self, line_num: int, line: str)</dt><dd><tt>Raise&nbsp;<a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>&nbsp;error&nbsp;if&nbsp;a&nbsp;todos&nbsp;exist&nbsp;in&nbsp;a&nbsp;comment.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line_num&nbsp;-&nbsp;an&nbsp;integer&nbsp;with&nbsp;the&nbsp;line&nbsp;number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;line&nbsp;content</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="CodeAnalyzer-get_code_lines_from_file"><strong>get_code_lines_from_file</strong></a>(file_path: str)</dt><dd><tt>Get&nbsp;list&nbsp;of&nbsp;lines&nbsp;read&nbsp;from&nbsp;a&nbsp;file.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;file_path&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;path&nbsp;of&nbsp;the&nbsp;file</tt></dd></dl>
+
+<dl><dt><a name="CodeAnalyzer-symbol_in_string"><strong>symbol_in_string</strong></a>(symbol: str, line: str, ignore_case=0) -&gt; bool</dt><dd><tt>Check&nbsp;if&nbsp;the&nbsp;given&nbsp;symbol&nbsp;is&nbsp;in&nbsp;a&nbsp;string.<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbol&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;symbol,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line&nbsp;-&nbsp;a&nbsp;string&nbsp;with&nbsp;the&nbsp;code&nbsp;line,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ignore_case&nbsp;-&nbsp;re.IGNORECASE&nbsp;flag&nbsp;for&nbsp;case-insensitive&nbsp;matching<br>
+return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;symbol&nbsp;is&nbsp;in&nbsp;a&nbsp;string,&nbsp;False&nbsp;otherwise</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>code_lines</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FunctionArgumentsAnalyzer">class <strong>FunctionArgumentsAnalyzer</strong></a>(<a href="ast.html#NodeVisitor">ast.NodeVisitor</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FunctionArgumentsAnalyzer">FunctionArgumentsAnalyzer</a>(file_path:&nbsp;str)<br>
+&nbsp;<br>
+Create&nbsp;<a href="#FunctionArgumentsAnalyzer">FunctionArgumentsAnalyzer</a>&nbsp;<a href="builtins.html#object">object</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="code_analyzer_classes.html#FunctionArgumentsAnalyzer">FunctionArgumentsAnalyzer</a></dd>
+<dd><a href="ast.html#NodeVisitor">ast.NodeVisitor</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FunctionArgumentsAnalyzer-__init__"><strong>__init__</strong></a>(self, file_path: str)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="FunctionArgumentsAnalyzer-visit_arguments"><strong>visit_arguments</strong></a>(self, node: ast.arguments)</dt></dl>
+
+<hr>
+Methods inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><a name="FunctionArgumentsAnalyzer-generic_visit"><strong>generic_visit</strong></a>(self, node)</dt><dd><tt>Called&nbsp;if&nbsp;no&nbsp;explicit&nbsp;visitor&nbsp;function&nbsp;exists&nbsp;for&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="FunctionArgumentsAnalyzer-visit"><strong>visit</strong></a>(self, node)</dt><dd><tt>Visit&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="FunctionArgumentsAnalyzer-visit_Constant"><strong>visit_Constant</strong></a>(self, node)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FunctionNameAnalyzer">class <strong>FunctionNameAnalyzer</strong></a>(<a href="ast.html#NodeVisitor">ast.NodeVisitor</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FunctionNameAnalyzer">FunctionNameAnalyzer</a>(file_path:&nbsp;str)<br>
+&nbsp;<br>
+Create&nbsp;<a href="#FunctionNameAnalyzer">FunctionNameAnalyzer</a>&nbsp;<a href="builtins.html#object">object</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="code_analyzer_classes.html#FunctionNameAnalyzer">FunctionNameAnalyzer</a></dd>
+<dd><a href="ast.html#NodeVisitor">ast.NodeVisitor</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FunctionNameAnalyzer-__init__"><strong>__init__</strong></a>(self, file_path: str)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="FunctionNameAnalyzer-visit_FunctionDef"><strong>visit_FunctionDef</strong></a>(self, node: ast.FunctionDef)</dt></dl>
+
+<hr>
+Methods inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><a name="FunctionNameAnalyzer-generic_visit"><strong>generic_visit</strong></a>(self, node)</dt><dd><tt>Called&nbsp;if&nbsp;no&nbsp;explicit&nbsp;visitor&nbsp;function&nbsp;exists&nbsp;for&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="FunctionNameAnalyzer-visit"><strong>visit</strong></a>(self, node)</dt><dd><tt>Visit&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="FunctionNameAnalyzer-visit_Constant"><strong>visit_Constant</strong></a>(self, node)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FunctionVariableNameAnalyser">class <strong>FunctionVariableNameAnalyser</strong></a>(<a href="ast.html#NodeVisitor">ast.NodeVisitor</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FunctionVariableNameAnalyser">FunctionVariableNameAnalyser</a>(file_path:&nbsp;str)<br>
+&nbsp;<br>
+Create&nbsp;FunctionVariableNameAnalyzer&nbsp;<a href="builtins.html#object">object</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="code_analyzer_classes.html#FunctionVariableNameAnalyser">FunctionVariableNameAnalyser</a></dd>
+<dd><a href="ast.html#NodeVisitor">ast.NodeVisitor</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FunctionVariableNameAnalyser-__init__"><strong>__init__</strong></a>(self, file_path: str)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="FunctionVariableNameAnalyser-visit_FunctionDef"><strong>visit_FunctionDef</strong></a>(self, node: ast.FunctionDef)</dt></dl>
+
+<hr>
+Methods inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><a name="FunctionVariableNameAnalyser-generic_visit"><strong>generic_visit</strong></a>(self, node)</dt><dd><tt>Called&nbsp;if&nbsp;no&nbsp;explicit&nbsp;visitor&nbsp;function&nbsp;exists&nbsp;for&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="FunctionVariableNameAnalyser-visit"><strong>visit</strong></a>(self, node)</dt><dd><tt>Visit&nbsp;a&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="FunctionVariableNameAnalyser-visit_Constant"><strong>visit_Constant</strong></a>(self, node)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="ast.html#NodeVisitor">ast.NodeVisitor</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
